@@ -1,1 +1,3 @@
 0001-Relax-ABI-check.patch
+CVE-2023-5217.patch
+CVE-2023-44488.patch

@@ -1,3 +1,17 @@
+libvpx (1.11.0-2ubuntu2.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Heap buffer overflow in vp8 encoding
+    - debian/patches/CVE-2023-5217.patch: disallow thread count changes
+      in vp8/encoder/onyx_if.c.
+    - CVE-2023-5217
+  * SECURITY UPDATE: Width mishandling in vp9 encoding
+    - debian/patches/CVE-2023-44488.patch: fix bug with smaller width
+      bigger size in test/resize_test.cc, vp9/common/vp9_alloccommon.c,
+      vp9/encoder/vp9_encoder.c.
+    - CVE-2023-44488
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 02 Oct 2023 06:43:10 -0400
+
 libvpx (1.11.0-2ubuntu2) jammy; urgency=high
 
   * No change rebuild for ppc64el baseline bump.
