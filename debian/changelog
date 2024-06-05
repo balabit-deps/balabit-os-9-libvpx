@@ -1,3 +1,18 @@
+libvpx (1.11.0-2ubuntu2.3) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: multiple integer overflows
+    - debian/patches/CVE-2024-5197-pre1.patch: add test/vpx_image_test.cc.
+    - debian/patches/CVE-2024-5197-1.patch: fix integer overflows in calc
+      of stride_in_bytes in test/vpx_image_test.cc, vpx/src/vpx_image.c.
+    - debian/patches/CVE-2024-5197-2.patch: avoid integer overflows in
+      arithmetic operations in test/vpx_image_test.cc, vpx/src/vpx_image.c,
+      vpx/vpx_image.h.
+    - debian/patches/CVE-2024-5197-3.patch: fix a bug in alloc_size for
+      high bit depths in vpx/src/vpx_image.c.
+    - CVE-2024-5197
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 05 Jun 2024 10:04:53 -0400
+
 libvpx (1.11.0-2ubuntu2.2) jammy-security; urgency=medium
 
   * SECURITY UPDATE: Heap buffer overflow in vp8 encoding
