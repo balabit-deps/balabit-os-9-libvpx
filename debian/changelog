@@ -1,3 +1,11 @@
+libvpx (1.11.0-2ubuntu2.4) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: use-after-free vulnerability
+    - debian/patches/CVE-2025-5283.patch: fix double free on init failure.
+    - CVE-2025-5283
+
+ -- Fabian Toepfer <fabian.toepfer@canonical.com>  Mon, 02 Jun 2025 16:59:08 +0200
+
 libvpx (1.11.0-2ubuntu2.3) jammy-security; urgency=medium
 
   * SECURITY UPDATE: multiple integer overflows
