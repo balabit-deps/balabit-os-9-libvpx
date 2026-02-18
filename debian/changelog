@@ -1,3 +1,12 @@
+libvpx (1.11.0-2ubuntu2.5) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Heap buffer overflow
+    - debian/patches/CVE-2026-2447.patch: return 0 if buffer is full in
+      vp9/vp9_cx_iface.c.
+    - CVE-2026-2447
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 18 Feb 2026 11:01:23 -0500
+
 libvpx (1.11.0-2ubuntu2.4) jammy-security; urgency=medium
 
   * SECURITY UPDATE: use-after-free vulnerability
